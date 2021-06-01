@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài sản HT-ĐB</title>
+    <!-- Phần thư viện -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Phần dùng chung -->
+    <link rel="stylesheet" href="css/commom.css">
+    <!-- Phần riêng từng màn hình -->
+    <link rel="stylesheet" href="css/asset.css">
+</head>
+<body>
+    <div class="wrapper d-flex">
+        <!-- Phần menu -->
+        <div class="menu" id="nav-bar" type-menu = "big">
+            <div class="logo d-flex">
+                <img src="image/logo.png" alt="">
+                <div class="logo-title d-flex">
+                    <p class="MISA">MISA QLTS</p>
+                    <ion-icon class="reorder" name="reorder-three-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- Phần nội dung menu -->
+            <div class="menu-main">
+                <div class="menu-item">
+                    <img src="image/tongquan.png" alt="">
+                    <a class="title-item" href="#">Tổng quan</a>
+                </div>
+                <div class="menu-item">
+                    <img src="image/taisan.png" alt="">
+                    <a class="title-item" href="#">Tài sản</a>
+                    <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="menu-item">
+                    <div id="menu-item">
+                        <img src="image/ht-db.png" alt="">
+                        <a class="title-item" href="#">Tài sản HT-DB</a>
+                        <ion-icon class="chevron-down" id="chevron-down" name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="menu-dropdown">
+                        <a class="title-item-drop" href="#">Ghi tăng</a><br>
+                        <a class="title-item-drop" href="#">Thay đổi thông tin</a><br>
+                        <a class="title-item-drop" href="#">Đánh giá lại</a><br>
+                        <a class="title-item-drop" href="#">Tính hao mòn</a><br>
+                        <a class="title-item-drop" href="#">Kiểm kê</a><br>
+                        <a class="title-item-drop" href="#">Ghi giảm</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="image/congcu.png" alt="">
+                    <a class="title-item" href="#">Công cụ dụng cụ</a>
+                    <ion-icon class="chevron-down" name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="menu-item">
+                    <img src="image/danhmuc.png" alt="">
+                    <a class="title-item" href="#">Danh mục</a>
+                </div>
+                <div class="menu-item">
+                    <img src="image/tracuu.png" alt="">
+                    <a class="title-item" href="#">Tra cứu</a>
+                </div>
+                <div class="menu-item">
+                    <img src="image/baocao.png" alt="">
+                    <a class="title-item" href="#">Báo cáo</a>
+                </div>
+            </div>
+            <!-- Phần menu lớn -->
+            <div class="zoom-menu d-flex">
+                <img class="zoom" src="image/Menu.png" alt="">
+                <p class="menu-big">Menu lớn</p>
+            </div>
+           
+        </div>
+        <!-- Phần nội dung -->
+        <div class="content">
+            <!-- Phần chưa nội dụng Sở tài chính -->
+            <div class="finance d-flex">
+                <p class="title-finance">Sở tài chính</p>
+                <select class="form-year">
+                    <option value="1">2021</option>
+                    <option value="2">2020</option>
+                    <option value="3">2019</option>
+                </select>
+                <div class="tools-finance">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <ion-icon name="help-circle-outline"></ion-icon>
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <ion-icon class="caret-down" name="caret-down-outline"></ion-icon>
+                </div>
+            </div>
+            <!-- Phần chứa nội dung title Danh sách tài sản -->
+            <div class="title-content d-flex">
+                <p class="title-asset">Danh sách tài sản</p>
+                <ion-icon class="sync" name="sync-outline"></ion-icon>
+                <div class="add-asset d-flex">
+                    <button type="button" class="btn add d-flex">
+                        <p>Thêm</p>
+                        <ion-icon class="chevron" name="chevron-down-outline"></ion-icon>
+                    </button>
+                    <div class="bars-menu d-flex">
+                        <ion-icon class="menu-outline" name="menu-outline"></ion-icon>
+                        <ion-icon class="caret-down bars-caret" name="caret-down-outline"></ion-icon>   
+                    </div>
+                </div>
+
+            </div>
+            <!-- Phần chứa nội dung chi tiết danh sách tài sản -->
+            <div class="main-content">
+                <div class="main-content-header d-flex">
+                    <div class="search-box">
+                        <ion-icon class="search" name="search-outline"></ion-icon>
+                        <input type="text" name="" placeholder="Tìm kiếm tài sản">
+                    </div>
+                    <div class="main-content-menu">
+                        <a href="" class="main-menu-img">
+                            <img src="image/exel.png"/>
+                        </a>
+                        <a href="" class="main-menu-img">
+                            <img src="image/print.png"/>
+                        </a>
+                        <a href="" class="caret-down-outline main-menu-icon">
+                            <ion-icon name="caret-down-outline"></ion-icon>
+                        </a>
+                        <a href="" class="main-menu-icon">
+                            <ion-icon class="ellipsis" name="ellipsis-vertical-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-content-table d-flex">
+                     <!-- Danh sách nhân viên -->
+                    <div id="gridAsset">
+                        <div class="hide-item">
+                            <div class="col" FieldName="OrderNumber" dataType="double">STT</div>
+                            <div class="col" FieldName="ID">Mã tài sản</div>
+                            <div class="col" FieldName="Name">Tên tài sản</div>
+                            <div class="col" FieldName="Type">Loại tài sản</div>
+                            <div class="col" FieldName="Department">Bộ phận sử dụng</div>
+                            <div class="col" FieldName="Amount" dataType="number">Số lượng</div>
+                            <div class="col" FieldName="Price" dataType="number">Nguyên giá</div>
+                            <div class="col" FieldName="Cumulative" dataType="number">HM/KH lũy kế</div>
+                            <div class="col" FieldName="RealValue" dataType="number">Giá trị còn lại</d>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Phần thư viện -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Phần dùng chung -->
+    <script src="js/commom.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/format.js   "></script>
+    <!-- Phần riêng từng màn hình -->
+    <script src="js/asset.js"></script>
+</body>
+</html>
